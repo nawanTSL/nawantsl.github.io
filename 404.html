@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Nawan Tutu Syahlampah</title>
+  <script>
+    (function(){
+      var s=localStorage.getItem('theme');
+      var d=window.matchMedia('(prefers-color-scheme:dark)').matches;
+      document.documentElement.classList.toggle('dark',s==='dark'||(!s&&d));
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232DA97C'/><text x='50' y='68' font-family='Georgia,serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'>NS</text></svg>" type="image/svg+xml">
+  <style>
+    .error-page {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .error-code {
+      font-family: var(--font-heading);
+      font-size: clamp(4rem, 10vw, 8rem);
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 8px;
+      letter-spacing: -0.04em;
+    }
+    .error-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .error-message {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">N. Syahlampah</a>
+    </div>
+  </nav>
+  <main class="error-page">
+    <div>
+      <div class="error-code">404</div>
+      <h1 class="error-title">Page not found</h1>
+      <p class="error-message">The page you're looking for doesn't exist or has been moved.</p>
+      <a href="index.html" class="btn btn-primary">Back to Portfolio</a>
+    </div>
+  </main>
+</body>
+</html>
