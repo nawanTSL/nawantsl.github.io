@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
   <meta name="theme-color" content="#F7F7F3" media="(prefers-color-scheme: light)">
 
   <title>Nawan Tutu Syahlampah — Senior Backend &amp; Full-Stack Engineer</title>
-  <meta name="description" content="Portfolio of Nawan Tutu Syahlampah, a backend and full-stack engineer with 10+ years of experience in production systems, Laravel, React, cloud infrastructure, and technical product leadership.">
+  <meta name="description"
+    content="Portfolio of Nawan Tutu Syahlampah, a backend and full-stack engineer with 10+ years of experience in production systems, Laravel, React, cloud infrastructure, and technical product leadership.">
   <meta name="author" content="Nawan Tutu Syahlampah">
   <meta name="robots" content="index, follow">
 
@@ -19,7 +21,8 @@
   <!-- TODO: Replace {{PORTFOLIO_PUBLIC_URL}} with actual deployed URL -->
   <meta property="og:url" content="{{PORTFOLIO_PUBLIC_URL}}">
   <meta property="og:title" content="Nawan Tutu Syahlampah — Senior Backend &amp; Full-Stack Engineer">
-  <meta property="og:description" content="Portfolio of Nawan Tutu Syahlampah, a backend and full-stack engineer with 10+ years of experience in production systems, Laravel, React, cloud infrastructure, and technical product leadership.">
+  <meta property="og:description"
+    content="Portfolio of Nawan Tutu Syahlampah, a backend and full-stack engineer with 10+ years of experience in production systems, Laravel, React, cloud infrastructure, and technical product leadership.">
   <!-- TODO: Replace with actual OG image URL after deployment -->
   <meta property="og:image" content="assets/images/og-image.jpg">
   <meta property="og:site_name" content="Nawan Tutu Syahlampah">
@@ -27,12 +30,15 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nawan Tutu Syahlampah — Senior Backend &amp; Full-Stack Engineer">
-  <meta name="twitter:description" content="Portfolio of Nawan Tutu Syahlampah, a backend and full-stack engineer with 10+ years of experience in production systems, Laravel, React, cloud infrastructure, and technical product leadership.">
+  <meta name="twitter:description"
+    content="Portfolio of Nawan Tutu Syahlampah, a backend and full-stack engineer with 10+ years of experience in production systems, Laravel, React, cloud infrastructure, and technical product leadership.">
   <!-- TODO: Replace with actual OG image URL after deployment -->
   <meta name="twitter:image" content="assets/images/og-image.jpg">
 
   <!-- Favicon (SVG monogram) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232DA97C'/><text x='50' y='68' font-family='Georgia,serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'>NS</text></svg>" type="image/svg+xml">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232DA97C'/><text x='50' y='68' font-family='Georgia,serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle'>NS</text></svg>"
+    type="image/svg+xml">
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -57,21 +63,24 @@
 
   <!-- Inline critical theme script to prevent flash -->
   <script>
-    (function(){
-      var s=localStorage.getItem('theme');
-      var d=window.matchMedia('(prefers-color-scheme:dark)').matches;
-      document.documentElement.classList.toggle('dark',s==='dark'||(!s&&d));
+    (function () {
+      var s = localStorage.getItem('theme');
+      var d = window.matchMedia('(prefers-color-scheme:dark)').matches;
+      document.documentElement.classList.toggle('dark', s === 'dark' || (!s && d));
     })();
   </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <!-- Skip to Content -->
@@ -80,7 +89,7 @@
   <!-- ====== NAVIGATION ====== -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="Nawan Tutu Syahlampah — Home">N. Syahlampah</a>
+      <a href="index.html" class="nav-logo" aria-label="Nawan Tutu Syahlampah — Home">Nawan Syahlampah</a>
 
       <div class="nav-links" id="nav-links" role="menubar">
         <a href="#about" role="menuitem">About</a>
@@ -95,16 +104,31 @@
 
       <div class="nav-actions">
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode">
-          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
         </button>
 
         <!-- TODO: Add Upwork profile URL -->
         <a href="#contact" class="nav-cta">Hire Me on Upwork</a>
 
-        <button class="menu-btn" id="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
-          <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-          <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        <button class="menu-btn" id="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false"
+          aria-controls="nav-links">
+          <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M3 12h18M3 6h18M3 18h18" />
+          </svg>
+          <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
         </button>
       </div>
     </div>
@@ -120,19 +144,31 @@
           <div class="hero-content">
             <p class="hero-label" aria-hidden="true">Available for Projects</p>
 
-            <h1 id="hero-heading">I build reliable digital products—and keep them <em>dependable</em> in production.</h1>
+            <h1 id="hero-heading">I build reliable digital products—and keep them <em>dependable</em> in production.
+            </h1>
 
-            <p class="hero-subtitle">I'm Nawan Tutu Syahlampah, a backend and full-stack engineer from Bandung, Indonesia, with 10+ years of experience across software development, application operations, cloud infrastructure, and technical product leadership.</p>
+            <p class="hero-subtitle">I'm Nawan Tutu Syahlampah, a backend and full-stack engineer from Bandung,
+              Indonesia, with 10+ years of experience across software development, application operations, cloud
+              infrastructure, and technical product leadership.</p>
 
             <div class="hero-callout">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
               New to Upwork. Not new to production software.
             </div>
 
             <div class="hero-actions">
               <!-- TODO: Add Upwork profile URL -->
               <a href="#contact" class="btn btn-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
                 Hire Me on Upwork
               </a>
               <a href="#work" class="btn btn-secondary">View Selected Work</a>
@@ -140,15 +176,11 @@
           </div>
 
           <!-- Portrait: show image if available, monogram fallback -->
-          <div class="hero-monogram" id="hero-portrait-area" aria-hidden="true">
-            <span>NS</span>
+          <div class="hero-portrait" id="hero-portrait-area">
+            <img src="assets/images/nawan-profile.jpg"
+              alt="Nawan Tutu Syahlampah — Senior Backend and Full-Stack Engineer from Bandung, Indonesia" width="400"
+              height="500" loading="eager">
           </div>
-          <!-- 
-            When nawan-profile.jpg is available, replace the monogram div above with:
-            <div class="hero-portrait" id="hero-portrait-area">
-              <img src="assets/images/nawan-profile.jpg" alt="Nawan Tutu Syahlampah" width="200" height="200" loading="eager">
-            </div>
-          -->
         </div>
       </div>
     </section>
@@ -182,18 +214,29 @@
       <div class="container">
         <header class="section-header reveal">
           <p class="section-label">About</p>
-          <h2 class="section-title" id="about-heading">Senior Backend &amp; Full-Stack Engineer · Technical Product Lead</h2>
+          <h2 class="section-title" id="about-heading">Senior Backend &amp; Full-Stack Engineer · Technical Product Lead
+          </h2>
         </header>
 
         <div class="about-content">
           <div class="about-text reveal">
-            <p>My career started on the operations side — IT support, production monitoring, and incident troubleshooting. Those years taught me something that shaped everything I've done since: <strong>software doesn't end when you finish building it.</strong> It needs to work reliably when real people depend on it.</p>
+            <p>My career started on the operations side — IT support, production monitoring, and incident
+              troubleshooting. Those years taught me something that shaped everything I've done since: <strong>software
+                doesn't end when you finish building it.</strong> It needs to work reliably when real people depend on
+              it.</p>
 
-            <p>From there, I moved into backend development, working on settlement monitoring and bank reconciliation systems where precision and reliability weren't optional. Eventually, I started building my own products — learning platforms, document workflow systems, and mobile apps — and took on technical leadership, coordinating teams across backend, frontend, mobile, QA, and design.</p>
+            <p>From there, I moved into backend development, working on settlement monitoring and bank reconciliation
+              systems where precision and reliability weren't optional. Eventually, I started building my own products —
+              learning platforms, document workflow systems, and mobile apps — and took on technical leadership,
+              coordinating teams across backend, frontend, mobile, QA, and design.</p>
 
-            <p>Today, I lead a company and a team of around 12 people, but I stay close to the technical work. I'm comfortable discussing business requirements with stakeholders one moment and debugging a production issue the next. Having a working proficiency in English, I'm open to collaborating with clients across different time zones — schedules are always something we can work out.</p>
+            <p>Today, I lead a company and a team of around 12 people, but I stay close to the technical work. I'm
+              comfortable discussing business requirements with stakeholders one moment and debugging a production issue
+              the next. Having a working proficiency in English, I'm open to collaborating with clients across different
+              time zones — schedules are always something we can work out.</p>
 
-            <p>I'm most useful when a project needs someone who understands the product, can work through the technical details, and stays involved until the system runs dependably in production.</p>
+            <p>I'm most useful when a project needs someone who understands the product, can work through the technical
+              details, and stays involved until the system runs dependably in production.</p>
           </div>
 
           <aside class="about-sidebar">
@@ -203,12 +246,14 @@
 
               <div class="principle">
                 <h4>Understand the real problem</h4>
-                <p>Before writing any code, make sure the problem is clearly defined and the solution actually addresses what users need.</p>
+                <p>Before writing any code, make sure the problem is clearly defined and the solution actually addresses
+                  what users need.</p>
               </div>
 
               <div class="principle">
                 <h4>Make trade-offs visible</h4>
-                <p>Every technical decision has consequences — surface them early so the team and stakeholders can decide together.</p>
+                <p>Every technical decision has consequences — surface them early so the team and stakeholders can
+                  decide together.</p>
               </div>
 
               <div class="principle">
@@ -218,7 +263,8 @@
 
               <div class="principle">
                 <h4>Stay accountable after release</h4>
-                <p>Shipping is the halfway point. Monitor, respond, fix, and improve — that's where reliability is earned.</p>
+                <p>Shipping is the halfway point. Monitor, respond, fix, and improve — that's where reliability is
+                  earned.</p>
               </div>
             </div>
 
@@ -239,7 +285,8 @@
         <header class="section-header reveal">
           <p class="section-label">Selected Work</p>
           <h2 class="section-title" id="work-heading">Projects I've built, led, and operated</h2>
-          <p class="section-subtitle">From learning platforms to financial reconciliation — these are real products running in production, not demos or side projects.</p>
+          <p class="section-subtitle">From learning platforms to financial reconciliation — these are real products
+            running in production, not demos or side projects.</p>
         </header>
 
         <div class="project-list">
@@ -257,13 +304,17 @@
             <div class="project-card-body">
               <div class="project-grid">
                 <div class="project-overview">
-                  <p>A full education, learning, and online tryout platform serving more than 90,000 registered users. Supports tryout exams, online classes, learning content, rankings, reports, discussions, and user learning progress.</p>
+                  <p>A full education, learning, and online tryout platform serving more than 90,000 registered users.
+                    Supports tryout exams, online classes, learning content, rankings, reports, discussions, and user
+                    learning progress.</p>
 
                   <p class="project-detail-label">Challenge</p>
-                  <p class="project-detail-text">Building and evolving a production-grade education platform from scratch — not as a demo, but as a real product that users depend on daily for exam preparation.</p>
+                  <p class="project-detail-text">Building and evolving a production-grade education platform from
+                    scratch — not as a demo, but as a real product that users depend on daily for exam preparation.</p>
 
                   <p class="project-detail-label">Outcome</p>
-                  <p class="project-detail-text">Built and evolved a production learning platform serving more than 90,000 registered users. Secured USD 29K in startup cloud credits across AWS and Google Cloud.</p>
+                  <p class="project-detail-text">Built and evolved a production learning platform serving more than
+                    90,000 registered users. Secured USD 29K in startup cloud credits across AWS and Google Cloud.</p>
                 </div>
                 <div>
                   <p class="project-detail-label">Contribution</p>
@@ -304,13 +355,19 @@
             <div class="project-card-body">
               <div class="project-grid">
                 <div class="project-overview">
-                  <p>Learning and exam preparation products for Indonesia's civil service selection (ASN). Built as a web and mobile ecosystem — IDCPNS uses React on web, BelajarPPPK runs as a Flutter mobile app. Features include tryout, class content, ranking, discussion, notifications, and learning progress.</p>
+                  <p>Learning and exam preparation products for Indonesia's civil service selection (ASN). Built as a
+                    web and mobile ecosystem — IDCPNS uses React on web, BelajarPPPK runs as a Flutter mobile app.
+                    Features include tryout, class content, ranking, discussion, notifications, and learning progress.
+                  </p>
 
                   <p class="project-detail-label">Challenge</p>
-                  <p class="project-detail-text">Managing multiple education products with a shared team while maintaining consistency across web and mobile platforms — and balancing continuous development with production operations.</p>
+                  <p class="project-detail-text">Managing multiple education products with a shared team while
+                    maintaining consistency across web and mobile platforms — and balancing continuous development with
+                    production operations.</p>
 
                   <p class="project-detail-label">Outcome</p>
-                  <p class="project-detail-text">Delivered and operated a multi-platform product ecosystem that bridges education content with technical implementation across web and mobile.</p>
+                  <p class="project-detail-text">Delivered and operated a multi-platform product ecosystem that bridges
+                    education content with technical implementation across web and mobile.</p>
                 </div>
                 <div>
                   <p class="project-detail-label">Contribution</p>
@@ -350,13 +407,18 @@
             <div class="project-card-body">
               <div class="project-grid">
                 <div class="project-overview">
-                  <p>A digital document workflow platform supporting document upload, e-signature placement, e-Meterai stamping, multiple signers, email invitations, signing progress tracking, KYC flow, and OTP verification via email and phone.</p>
+                  <p>A digital document workflow platform supporting document upload, e-signature placement, e-Meterai
+                    stamping, multiple signers, email invitations, signing progress tracking, KYC flow, and OTP
+                    verification via email and phone.</p>
 
                   <p class="project-detail-label">Challenge</p>
-                  <p class="project-detail-text">Building a reliable multi-step document workflow where each stage — upload, signing, stamping, notification — has to complete correctly, with clear status visibility and recovery paths for failures.</p>
+                  <p class="project-detail-text">Building a reliable multi-step document workflow where each stage —
+                    upload, signing, stamping, notification — has to complete correctly, with clear status visibility
+                    and recovery paths for failures.</p>
 
                   <p class="project-detail-label">Outcome</p>
-                  <p class="project-detail-text">Delivered a production document workflow system with asynchronous processing, clear signer status tracking, error handling, and operational traceability.</p>
+                  <p class="project-detail-text">Delivered a production document workflow system with asynchronous
+                    processing, clear signer status tracking, error handling, and operational traceability.</p>
                 </div>
                 <div>
                   <p class="project-detail-label">Focus Areas</p>
@@ -399,13 +461,17 @@
             <div class="project-card-body">
               <div class="project-grid">
                 <div class="project-overview">
-                  <p>A backend system for settlement monitoring and transaction reconciliation, processing bank-specific file formats from Bank Mandiri, BRI, and BCA. Required precision in data handling and thorough investigation of discrepancies.</p>
+                  <p>A backend system for settlement monitoring and transaction reconciliation, processing bank-specific
+                    file formats from Bank Mandiri, BRI, and BCA. Required precision in data handling and thorough
+                    investigation of discrepancies.</p>
 
                   <p class="project-detail-label">Challenge</p>
-                  <p class="project-detail-text">Each bank delivers settlement data in its own format. The system needed to normalize, reconcile, and flag discrepancies accurately without losing data integrity.</p>
+                  <p class="project-detail-text">Each bank delivers settlement data in its own format. The system needed
+                    to normalize, reconcile, and flag discrepancies accurately without losing data integrity.</p>
 
                   <p class="project-detail-label">Outcome</p>
-                  <p class="project-detail-text">Delivered a reliable settlement monitoring system that handled multi-bank file processing with reconciliation logic and operational troubleshooting.</p>
+                  <p class="project-detail-text">Delivered a reliable settlement monitoring system that handled
+                    multi-bank file processing with reconciliation logic and operational troubleshooting.</p>
                 </div>
                 <div>
                   <p class="project-detail-label">Focus Areas</p>
@@ -442,13 +508,16 @@
             <div class="project-card-body">
               <div class="project-grid">
                 <div class="project-overview">
-                  <p>A digital product for stock trading journaling and evaluation. Helps users log their trading activity and use calculators to support their decision-making process.</p>
+                  <p>A digital product for stock trading journaling and evaluation. Helps users log their trading
+                    activity and use calculators to support their decision-making process.</p>
 
                   <p class="project-detail-label">Challenge</p>
-                  <p class="project-detail-text">Turning a specific personal need — tracking and evaluating stock trades — into a functional digital product that others can use.</p>
+                  <p class="project-detail-text">Turning a specific personal need — tracking and evaluating stock trades
+                    — into a functional digital product that others can use.</p>
 
                   <p class="project-detail-label">Outcome</p>
-                  <p class="project-detail-text">Demonstrated the ability to identify a real-world problem and ship an independent product from concept to release.</p>
+                  <p class="project-detail-text">Demonstrated the ability to identify a real-world problem and ship an
+                    independent product from concept to release.</p>
                 </div>
                 <div>
                   <p class="project-detail-label">Focus Areas</p>
@@ -574,17 +643,23 @@
         <header class="section-header reveal">
           <p class="section-label">Services</p>
           <h2 class="section-title" id="services-heading">How I can help</h2>
-          <p class="section-subtitle">Whether you need backend systems, a full product build, production support, or technical direction — here's what I bring to projects.</p>
+          <p class="section-subtitle">Whether you need backend systems, a full product build, production support, or
+            technical direction — here's what I bring to projects.</p>
         </header>
 
         <div class="services-grid">
 
           <article class="service-card reveal">
             <div class="service-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
             </div>
             <h3>Backend &amp; API Development</h3>
-            <p>Reliable backend systems, REST APIs, business logic, database design, integrations, and queue-based workflows using PHP and Laravel.</p>
+            <p>Reliable backend systems, REST APIs, business logic, database design, integrations, and queue-based
+              workflows using PHP and Laravel.</p>
             <div class="service-capabilities">
               <span class="tag">Laravel</span>
               <span class="tag">REST API</span>
@@ -598,10 +673,16 @@
 
           <article class="service-card reveal">
             <div class="service-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
             </div>
             <h3>Full-Stack Product Development</h3>
-            <p>From requirements and interface implementation to backend integration, testing, release, and production support.</p>
+            <p>From requirements and interface implementation to backend integration, testing, release, and production
+              support.</p>
             <div class="service-capabilities">
               <span class="tag">React Frontend</span>
               <span class="tag">Laravel Backend</span>
@@ -614,10 +695,14 @@
 
           <article class="service-card reveal">
             <div class="service-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
             </div>
             <h3>Production Support &amp; Cloud Operations</h3>
-            <p>Investigation and resolution of production issues across applications, infrastructure, databases, and external integrations.</p>
+            <p>Investigation and resolution of production issues across applications, infrastructure, databases, and
+              external integrations.</p>
             <div class="service-capabilities">
               <span class="tag">Linux</span>
               <span class="tag">Monitoring</span>
@@ -631,10 +716,17 @@
 
           <article class="service-card reveal">
             <div class="service-icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
             </div>
             <h3>Technical Project Leadership</h3>
-            <p>Practical technical direction for teams that need clearer requirements, realistic trade-offs, and dependable delivery.</p>
+            <p>Practical technical direction for teams that need clearer requirements, realistic trade-offs, and
+              dependable delivery.</p>
             <div class="service-capabilities">
               <span class="tag">Requirements Analysis</span>
               <span class="tag">Architecture Planning</span>
@@ -725,15 +817,26 @@
       <div class="container">
         <div class="upwork-section reveal">
           <h2 id="upwork-heading">New to Upwork. Experienced in real-world delivery.</h2>
-          <p>I'm building my reputation on Upwork, but the work itself isn't new to me. With more than a decade of hands-on experience in development and production operations — from backend systems and financial reconciliation to education platforms and document workflows — I bring a track record that exists outside any single platform. For my early Upwork projects, I'm committed to clear communication, attention to detail, and delivering work that speaks for itself.</p>
+          <p>I'm building my reputation on Upwork, but the work itself isn't new to me. With more than a decade of
+            hands-on experience in development and production operations — from backend systems and financial
+            reconciliation to education platforms and document workflows — I bring a track record that exists outside
+            any single platform. For my early Upwork projects, I'm committed to clear communication, attention to
+            detail, and delivering work that speaks for itself.</p>
           <div class="upwork-actions">
             <!-- TODO: Add Upwork profile URL -->
             <a href="#contact" class="btn btn-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
               Discuss Your Project on Upwork
             </a>
             <a href="mailto:nawantutu@gmail.com" class="btn btn-secondary">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
               Send an Email
             </a>
           </div>
@@ -747,22 +850,33 @@
         <header class="section-header reveal">
           <p class="section-label">Contact</p>
           <h2 class="section-title" id="contact-heading">Let's work together</h2>
-          <p class="section-subtitle">Have a project in mind? Reach out through any of these channels — I'm happy to discuss how I can help.</p>
+          <p class="section-subtitle">Have a project in mind? Reach out through any of these channels — I'm happy to
+            discuss how I can help.</p>
         </header>
 
         <div class="contact-grid reveal">
           <div class="contact-text">
             <div class="contact-links">
               <a href="mailto:nawantutu@gmail.com" class="contact-link">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
                 <div>
                   <div class="contact-link-label">Email</div>
                   <div class="contact-link-value">nawantutu@gmail.com</div>
                 </div>
               </a>
 
-              <a href="https://www.linkedin.com/in/nawantsl/" class="contact-link" target="_blank" rel="noopener noreferrer">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://www.linkedin.com/in/nawantsl/" class="contact-link" target="_blank"
+                rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
                 <div>
                   <div class="contact-link-label">LinkedIn</div>
                   <div class="contact-link-value">linkedin.com/in/nawantsl</div>
@@ -771,7 +885,11 @@
 
               <!-- TODO: Add Upwork profile URL -->
               <div class="contact-link" style="opacity: 0.5; cursor: default;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
                 <div>
                   <div class="contact-link-label">Upwork</div>
                   <div class="contact-link-value">Profile coming soon</div>
@@ -780,7 +898,11 @@
 
               <!-- TODO: Add GitHub profile URL -->
               <div class="contact-link" style="opacity: 0.5; cursor: default;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
                 <div>
                   <div class="contact-link-label">GitHub</div>
                   <div class="contact-link-value">Profile coming soon</div>
@@ -791,15 +913,27 @@
 
           <div class="contact-info">
             <div class="contact-info-item">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
               <span>Bandung, Indonesia</span>
             </div>
             <div class="contact-info-item">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
               <span>UTC+7 · Flexible schedule — open to discussion</span>
             </div>
             <div class="contact-info-item">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 20h9" />
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg>
               <span>Working proficiency in English</span>
             </div>
             <!-- CV Download: hidden until file is available -->
@@ -827,4 +961,5 @@
   <!-- JavaScript -->
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

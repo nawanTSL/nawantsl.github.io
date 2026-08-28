@@ -456,23 +456,25 @@ html.dark .theme-toggle .icon-sun {
 
 /* Profile image / Monogram */
 .hero-portrait {
-  width: 200px;
-  height: 200px;
+  width: clamp(180px, 18vw, 240px);
+  aspect-ratio: 4 / 5;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--border);
   flex-shrink: 0;
+  box-shadow: var(--shadow-md);
 }
 
 .hero-portrait img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 15%;
 }
 
 .hero-monogram {
-  width: 200px;
-  height: 200px;
+  width: clamp(180px, 18vw, 240px);
+  aspect-ratio: 4 / 5;
   border-radius: var(--radius);
   background: var(--surface);
   border: 1px solid var(--border);
@@ -491,6 +493,13 @@ html.dark .theme-toggle .icon-sun {
   user-select: none;
 }
 
+@media (max-width: 768px) {
+  .hero-portrait,
+  .hero-monogram {
+    width: clamp(140px, 28vw, 180px);
+  }
+}
+
 @media (max-width: 640px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -498,13 +507,18 @@ html.dark .theme-toggle .icon-sun {
 
   .hero-portrait,
   .hero-monogram {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     order: -1;
   }
 
+  .hero-portrait img {
+    object-position: center 20%;
+  }
+
   .hero-monogram span {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 
